@@ -40,7 +40,6 @@ That's the question behind my master's thesis, **Integrating Clinical Data Towar
 
 **What the model does**
 
-- Turns every feature into a token built from the **column name** (embedded with BioLORD) and its **value**, so cohorts with different schemas can share one Transformer encoder (built on TransTab)
 - Gives missing values their own **learned embedding**: in the original TransTab a missing value ended up looking like an average one
 - **Contrastive pre-training** on MIMIC-IV, then **fine-tuning** with a Cox survival head on two Italian cardiovascular cohorts (URRAH and IHD)
 
